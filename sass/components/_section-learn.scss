@@ -1,0 +1,56 @@
+@include respond(phone){
+    .form{
+        background-color: $color-white;
+        border-radius: 3px;
+        width: 90%;
+        margin: 0 auto;
+        &--group-general{
+            padding: 0 5rem;
+        }
+        &__group{
+            margin-bottom: 2rem;
+            label{
+                display: block;
+                font-size: 2rem;
+                font-weight: 500;
+                color: $color-grey-dark-3;
+            }
+        }
+        &__terms{
+            margin-bottom: 2rem;
+            &--label{
+                font-size: 2rem;
+            }
+        }
+        &__submit{
+            margin-bottom: 1.2rem;
+            padding: 1.5rem;
+            font-size: 2rem;
+            background-color: $color-tertiary-light;
+            border: none;
+            color: $color-white;
+            font-weight: 500;
+        }
+        p{
+            text-align: center;
+        }
+        input:not(#terms){
+            width: 100%;
+            border-radius: 3px;
+            padding: 1.5rem;
+            background-color: $color-grey-light-2;
+            font-size: 1.6rem;
+        }
+    }
+    .course-stat{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        font-size: 4rem;
+        color: $color-white;
+        &__increase{
+            font-size: 6rem;
+        }
+    }
+}

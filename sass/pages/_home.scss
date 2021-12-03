@@ -1,0 +1,29 @@
+.section-learn{
+    background-image: linear-gradient($color-grey-dark, $color-grey-dark-2);
+    margin: 0;
+    padding: 10rem;
+}
+.flexible{
+    padding: 10rem;
+    margin: 0;
+    border-bottom: 1px solid $color-grey-light-2;
+}
+.section-supportive{
+    padding: 10rem;
+    margin: 0;
+    border-bottom: 1px solid $color-grey-light-2;
+}
+.section-partner{
+    padding: 10rem;
+    margin: 0;
+}
+.section-cta{
+    padding: 10rem;
+    margin: 0;
+    background-color: $color-tertiary-dark;
+}
+.footer{
+    padding: 10rem;
+    margin: 0;
+    background-color: $color-white;
+}

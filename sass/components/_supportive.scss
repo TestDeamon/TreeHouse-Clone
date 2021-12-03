@@ -1,0 +1,19 @@
+.supportive{
+    @include respond(phone){
+        &__heading{
+            font-size: 3rem;
+            color: $color-black;
+            text-align: left;
+        }
+        &__text{
+            font-size: 2.5rem;
+            text-align: justify;
+            color: inherit;
+        }
+        &__image{
+            height: 30rem;
+            width: 100%;
+            background-color: yellowgreen;
+        }
+    }
+}

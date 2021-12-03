@@ -1,0 +1,30 @@
+.heading-primary{
+    font-size: 5rem;
+    line-height: 1.5;
+    text-align: left;
+    color: $color-white;
+    margin-bottom: 4rem;
+}
+.heading-primary--main{
+    display: block;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+.heading-primary--sub{
+    font-weight: 500;
+}
+.heading-secondary{
+    background-color: rgba($color-black, .3);
+    font-size: 3rem;
+    margin-top: 0;
+    border-radius: 3px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading-secondary-main{
+    display: block;
+}
+.heading-secondary-sub{
+    font-weight: 500;
+}

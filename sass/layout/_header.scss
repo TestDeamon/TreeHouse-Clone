@@ -1,0 +1,132 @@
+.header{
+    @include respond(phone){
+        position: fixed;
+        background-color: $color-white;
+        z-index: 9999999999;
+        width: 100%;
+        &-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0 0 100%;
+        }
+        &__dropdown{
+            ul{
+                display: none;
+
+                width: 20%;
+                margin: 10rem auto;
+                list-style: none;
+                text-align: center;
+                line-height: 2;
+                li{
+                    
+                    &:not(:last-child){
+                        margin-bottom: 1.5rem;
+                        border-bottom: 1px solid grey;
+                    }
+                    a{
+                        display: inline-block;
+                        padding: 3rem 0;
+                        text-decoration: none;
+                        font-size: 3rem;
+                        color: black;
+                    }
+                }
+            }
+
+        }
+        &__nav{
+            flex: 0 0 5%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 2rem;
+            align-items: center;
+            height: 7rem;
+            
+            &--input{
+                display: none;
+            }
+    
+            &--label{
+                position: relative;
+                height: 7rem;
+                width: 3.5rem;
+            }
+    
+            &--button{
+                height: 3px;
+                width: 3.5rem;
+                background-color: $color-black;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                transition: all .3s;
+                &::before, &::after{
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    background-color: $color-black;
+                    position: absolute;
+                    left: 0;
+                    transition: all .3s;
+                }
+                &::before{top: -1rem}
+                &::after{top: 1rem}
+                
+            }
+            &:hover{cursor: pointer;}
+            &:hover &--button::before{top: -1.4rem;}
+            &:hover &--button::after{top: 1.4rem;}
+        }
+        &__nav--input:checked ~ &__nav--label &__nav--button{background-color: transparent;}
+        &__nav--input:checked ~ &__nav--label &__nav--button{
+            &::before{
+                top: 0;
+                transform-origin: center;
+                transform: rotate(130deg);
+            }
+            &::after{
+                top: 0;
+                transform-origin: center;
+                transform: rotate(-130deg);
+            }
+        }
+        &__nav--input:checked ~ &__dropdown ul{
+            position: absolute;
+            left: 0;
+            top: 7rem;
+            width: 100%;
+            display: block;
+            background-color: #fff;
+            height: 500px;
+            margin-top: 0;
+
+        }
+    
+        &__logo{
+            color: $color-primary;
+            display: flex;
+            align-items: center;
+            &--icon{
+                height: 4rem;
+                width: 4rem;
+                margin-right: 1rem;
+                fill: $color-primary;
+            }
+            &--inscription{
+                font-size: 3.5rem;
+                color: $color-primary;
+                margin-right: 2rem;
+            }
+        }
+        &__inscription{
+            font-size: 3rem;
+            color: $color-primary;
+            margin-right: 2rem;
+            display: flex;
+            align-items: baseline;
+        }
+        
+    }
+}

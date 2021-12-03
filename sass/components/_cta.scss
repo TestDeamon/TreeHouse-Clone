@@ -1,0 +1,27 @@
+.cta{
+    text-align: center;
+    color: $color-white;
+    margin: 0 auto;
+    &__heading{
+        font-size: 5rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    &__body{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    &--btn{
+        &, &:link, &:visited{
+            text-decoration: none;
+            color: $color-white;
+            padding: 1.5rem 2rem;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 3rem;
+            background-color: $color-primary;
+            box-shadow: 0 .5rem 1.5rem $color-grey-dark;
+        }
+    }
+}

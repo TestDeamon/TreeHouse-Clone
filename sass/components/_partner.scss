@@ -1,0 +1,103 @@
+.partner{
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        font-size: 6rem;
+        line-height: 1;
+        text-align: center;
+    }
+    &__google{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 5rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--img{
+            height: 5rem;
+            width: 5rem;
+            background-color: yellowgreen;
+            margin-right: 2rem;
+        }
+    }
+
+    &__ibm{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 5rem;
+        font-family: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--1{
+            padding: 2rem;
+            span{
+                font-weight: 800;
+            }
+        }
+
+    }
+
+    &__amazon{
+        margin: 0 auto;
+        @include clearFix;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        &--logo{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            background-color: $color-tertiary-light;
+            position: relative;
+            margin-right: 2rem;
+
+            &::after{
+                content: "";
+                @include centralize;
+                height: 80%;
+                width: 80%;
+                background-color: $color-white;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__microsoft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+
+.micro{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+    width: 10rem;
+    margin-right: 1.5rem;
+    &__box{
+        height: 5rem;
+        width: 5rem;
+        
+        &--1{
+            background-color: red;
+        }
+        &--2{
+            background-color: green;
+        }
+        &--3{
+            background-color: blue;
+        }
+        &--4{
+            background-color: orange;
+        }
+        
+    }
+}
